@@ -1,0 +1,1049 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    cursor: none;
+    overflow-x: hidden;
+}
+
+#main{
+    overflow-x: hidden;
+}
+
+
+
+.loader{
+    width: 100vw;
+    height: 100vh;
+    z-index:99;
+    background-color: black;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 1s all linear;
+}
+.progress-bar{
+    width: 70vw;
+    height: 0.3vh;
+    background-color: white;
+    position: relative;
+}
+.progress{
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    background-color: rgb(117, 218, 180);
+    animation: animate 3s linear  infinite ;
+}
+
+@keyframes animate {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 100%;
+    }
+}
+
+.mouse-circle{
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    border: 2px solid rgb(61,173,149);
+    z-index: 999;
+    border-radius: 50%;
+    
+}
+.mouse-small-circle{
+    width: 10px;
+    height: 10px;
+    border: 1px solid rgb(117, 218, 180);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: rgb(117, 218, 180);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.page1 {
+    width: 100vw;
+    height: 100vh;
+}
+
+.swiper {
+    width: 100vw;
+    height: 100vh;
+}
+
+.swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slide1 {
+    width: 100vw;
+    background-image: url(Images/slider-img2.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.overlay {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(78, 77, 77, 0.726);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.slide2 {
+    width: 100vw;
+    background-image: url(Images/slider\ img3.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.slide3 {
+    width: 100vw;
+    background-image: url(Images/slider\ img\ 4.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.arrow {
+    color: white;
+    font-size: 1vh;
+}
+
+nav {
+    height: 15vh;
+    width: 100vw;
+    padding: 0 3vw;
+    position: absolute;
+    /* top: 0; */
+    z-index: 20;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+nav ul li {
+    color: white;
+    margin: 1.2vw;
+    font-size: 2vh;
+    font-family: Montserrat;
+}
+
+nav img {
+    width: 10%;
+}
+
+.ri-menu-line {
+    color: white;
+    display: none;
+}
+
+.page1-textdiv {
+    width: 60vw;
+    height: 70vh;
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 4vw;
+    color: white;
+    font-family: montserrat;
+}
+
+.page1-textdiv h1 {
+    width: 70%;
+    font-size: 10vh;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 5vh;
+}
+
+.page1-textdiv p {
+    font-size: 3vh;
+    margin-bottom: 5vh;
+    width: 90%;
+
+}
+
+.page1-textdiv button {
+    padding: 2vh 3.5vw;
+    font-size: 2.3vh;
+    font-weight: 600;
+    letter-spacing: 0.3vh;
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    position: relative;
+    z-index: 20;
+}
+
+.page1-textdiv button::after {
+    content: "";
+    background-color: white;
+    transition: 0.3s all linear;
+    width: 100%;
+    height: 0%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.page1-textdiv button:hover {
+    color: black;
+}
+
+.page1-textdiv button:hover::after {
+    height: 100%;
+}
+
+.page1-textdiv2,.page1-textdiv3 {
+    width: 60vw;
+    height: 70vh;
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 4vw;
+    color: white;
+    font-family: montserrat;
+}
+
+.page1-textdiv2 h1 ,.page1-textdiv3 h1 {
+    width: 70%;
+    font-size: 10vh;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 5vh;
+}
+
+.page1-textdiv2 p,.page1-textdiv3 p{
+    font-size: 3vh;
+    margin-bottom: 5vh;
+    width: 90%;
+
+}
+
+.page1-textdiv2 button ,.page1-textdiv3 button{
+    padding: 2vh 3.5vw;
+    font-size: 2.3vh;
+    font-weight: 600;
+    letter-spacing: 0.3vh;
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    position: relative;
+    z-index: 20;
+}
+
+.page1-textdiv2 button::after ,.page1-textdiv3 button::after {
+    content: "";
+    background-color: white;
+    transition: 0.3s all linear;
+    width: 100%;
+    height: 0%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.page1-textdiv2 button:hover ,.page1-textdiv3 button:hover{
+    color: black;
+}
+
+.page1-textdiv2 button:hover::after,.page1-textdiv3 button:hover::after {
+    height: 100%;
+}
+
+
+
+
+
+
+.page2 {
+    width: 100vw;
+    min-height: 100vh;
+    background-color: black;
+    position: relative;
+
+}
+
+.page2-top {
+    width: 100vw;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.fade {
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.1);
+    font-size: 15vh;
+    letter-spacing: 0.1vh;
+    color: transparent;
+    opacity: 5;
+    font-family: Gilroy;
+}
+
+.text h1 {
+    color: white;
+    position: absolute;
+    top: 55%;
+    left: 30%;
+    font-size: 8vh;
+    font-family: montserrat;
+
+}
+
+.text h3 {
+    color: rgb(61, 173, 149);
+    position: absolute;
+    top: 32%;
+    left: 50%;
+    font-family: montserrat;
+    font-size: 5vh;
+    letter-spacing: 2vh;
+    font-weight: 400;
+}
+
+.page2-center {
+    width: 90vw;
+    height: 50vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 99;
+}
+
+.box {
+    width: 22.4vw;
+    height: 100%;
+}
+
+.box1 {
+    background-image: url(Images/bahas.jpg);
+    background-position: center;
+    background-size: cover;
+
+}
+
+.overlay-1 {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.534);
+}
+
+.box1-text {
+    width: 100%;
+    height: 100%;
+    padding: 3vw;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.box1-text h1 {
+    color: white;
+    font-family: montserrat;
+}
+
+.box1-text button {
+    padding: 2vh 3.5vw;
+    font-size: 2.3vh;
+    font-weight: 600;
+    letter-spacing: 0.3vh;
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    position: relative;
+    z-index: 20;
+}
+
+.box1-text button::after {
+    content: "";
+    background-color: white;
+    transition: 0.3s all linear;
+    width: 100%;
+    height: 0%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.box1-text button:hover {
+    color: rgb(61, 173, 149);
+}
+
+.box1-text button:hover::after {
+    height: 100%;
+}
+
+.box2 {
+    background-color: rgb(24, 27, 33);
+}
+
+.box2-text,
+.box3-text,
+.box4-text {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.box2-text i,
+.box3-text i,
+.box4-text i {
+    color: rgb(61, 173, 149);
+    font-size: 5vh;
+}
+
+.box2-text h2,
+.box3-text h2,
+.box4-text h2 {
+    color: white;
+    font-size: 3vh;
+    font-family: montserrat;
+    margin: 1vw 0;
+}
+
+.box2-text p,
+.box3-text p,
+.box4-text p {
+    color: grey;
+    font-size: 2vh;
+    font-weight: 800;
+    font-family: montserrat;
+
+}
+
+
+.box3 {
+    background-color: rgb(26, 30, 37);
+}
+
+.box4 {
+    background-color: rgb(32, 36, 44);
+}
+
+.page3 {
+    width: 100vw;
+    min-height: 100vh;
+    background-color: rgb(12, 15, 22);
+    display: flex;
+
+}
+
+.page3-left {
+    width: 50vw;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page3-left-part1 {
+    width: 18vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 2vw;
+}
+
+.part1-img1,
+.part1-img2 {
+    width: 100%;
+    height: 15vw;
+    border-radius: 1vw;
+    overflow: hidden;
+    margin-top: 2vw;
+}
+
+.part1-img1 img,
+.part1-img2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.page3-left-part2 {
+    width: 18vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.part2-img1,
+.part2-img2 {
+    width: 100%;
+    height: 15vw;
+    border-radius: 1vw;
+    overflow: hidden;
+    margin-top: 1.5vw;
+}
+
+.part2-img1 img,
+.part2-img2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.page3-right {
+    width: 50vw;
+    min-height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    color: white;
+    padding: 2vw;
+    font-family: montserrat;
+}
+
+.page3-right h5 {
+    margin-bottom: 2vw;
+}
+
+.page3-right h1 {
+    margin-bottom: 2vw;
+    font-size: 5vh;
+}
+
+.page3-right p {
+    word-break: 1vh;
+    margin-bottom: 2vw;
+
+}
+
+.page3-right button {
+    padding: 2vh 3.5vw;
+    font-size: 2.3vh;
+    font-weight: 600;
+    letter-spacing: 0.3vh;
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    position: relative;
+    z-index: 20;   
+}
+
+.page3-right button::after {
+    content: "";
+    background-color: white;
+    transition: 0.3s all linear;
+    width: 100%;
+    height: 0%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.page3-right button:hover {
+    color: rgb(61, 173, 149);
+    cursor: pointer;
+}
+
+.page3-right button:hover::after {
+    height: 100%;
+}
+
+.page3-right-bottom {
+    width: 100%;
+    height: 20vh;
+    margin-top: 4vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bottom-box {
+    width: 13.5vw;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(17, 20, 27);
+    border-radius: 15px;
+}
+
+.Global i,
+.Pioneering i,
+.Driving i {
+    color: rgb(46, 133, 115);
+    font-size: 5vh;
+    margin-bottom: 2vh;
+}
+
+.Global h3,
+.Pioneering h3,
+.Driving h3 {
+    font-weight: 300;
+    letter-spacing: 0.3vh;
+    font-family: gilroy;
+}
+
+.page4 {
+    width: 100vw;
+    height: 120vh;
+    background-color: rgb(17, 20, 27);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.page4-top {
+    height: 40vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.page4-top-box {
+    width: 20vw;
+    height: 80%;
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    font-family: Gilroy;
+    border-right: 0.1px solid grey;
+}
+
+
+.page4-top-box h3 {
+    font-weight: 300;
+    margin-bottom: 4vh;
+    font-size: 5vh;
+}
+
+.page4-top-box h4 {
+    font-size: 2.5vh;
+    text-align: center;
+    font-weight: 300;
+}
+
+.page4-center {
+    height: 70vh;
+    width: 100vw;
+    position: relative;
+}
+
+.page4-center-img {
+    width: 100vw;
+    height: 40vh;
+    background-image: url(Images/our-people\ img.jpg);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.overlay-4 {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(32, 32, 32, 0.784);
+    display: flex;
+    align-items: center;
+}
+
+.overlay-4 h1 {
+    color: white;
+    padding-left: 8vw;
+    font-size: 8vh;
+    font-family: gilroy;
+    width: 60%;
+
+}
+
+.small-slider {
+    width: 38vw;
+    height: 45vh;
+    position: absolute;
+    right: 5%;
+    top: 18%;
+    background-color: rgb(117, 218, 180);
+    border-radius: 5%;
+    overflow: hidden;
+}
+
+.permanant-text {
+    width: 100%;
+    font-family: montserrat;
+    padding: 2vh;
+}
+
+.permanant-text h6 {
+    letter-spacing: 0.6vh;
+    font-weight: 400;
+    margin-bottom: 2vh;
+
+}
+
+.permanant-text h4 {
+    font-size: 5vh;
+
+}
+
+.info {
+    height: 100%;
+    padding: 1vw;
+}
+
+.info h3 {
+    font-weight: 300;
+    font-family: montserrat;
+    font-size: 2.8vh;
+    letter-spacing: 0.2vh;
+}
+
+.profile-info {
+    width: 100%;
+    display: flex;
+    margin-top: 3vw;
+    padding: 1vw 2vw;
+    align-items: center;
+}
+
+.profile-img {
+    width: 5vw;
+    height: 10vh;
+    overflow: hidden;
+    margin-right: 2vw;
+    border-radius: 90%;
+
+}
+
+.profile-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.profile-info-name h3 {
+    font-size: 3vh;
+    font-weight: 500;
+    font-family: montserrat;
+}
+
+.profile-info-name p {
+    font-size: 2vh;
+    margin-top: 1vh;
+    font-weight: 900;
+    font-family: montserrat;
+
+}
+
+:root {
+    --swiper-theme-color: black;
+}
+
+.page4-bottom {
+    width: 100vw;
+    height: 30vh;
+    display: flex;
+}
+
+.page4-bottom-one,
+.page4-bottom-two {
+    width: 20vw;
+    height: 25vh;
+    margin-left: 2vw;
+    display: flex;
+    align-items: center;
+    padding: 0 1vw;
+}
+
+.counting {
+    border: 2px solid aqua;
+    width: 8vw;
+    height: 8vw;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.counting p {
+    color: white;
+}
+
+.counting-text {
+    padding: 1vw;
+    font-family: montserrat;
+}
+
+.counting-text h6 {
+    color: grey;
+    margin-bottom: 0.5vh;
+}
+
+.counting-text h5 {
+    color: white;
+}
+
+.page5 {
+    width: 100vw;
+    height: 110vh;
+    background-color: rgb(17, 20, 27);
+    overflow: hidden;
+}
+
+.page5-top {
+    width: 100vw;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.fade {
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.1);
+    font-size: 15vh;
+    letter-spacing: 0.1vh;
+    color: transparent;
+    opacity: 5;
+    font-family: Gilroy;
+}
+
+.text h1 {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 8vh;
+    font-family: montserrat;
+    transform: translate(-50%, 0%);
+    letter-spacing: 0.5vh;
+
+}
+
+.text h3 {
+    color: rgb(61, 173, 149);
+    position: absolute;
+    top: 20%;
+    left: 42%;
+    font-family: montserrat;
+    font-size: 4vh;
+    letter-spacing: 0.5vh;
+    font-weight: 400;
+}
+
+.mySwiperlast {
+    width: 100vw;
+    height: 70vh;
+
+}
+
+.news-div {
+    width: 40vw;
+    height: 40vh;
+    display: flex;
+    box-shadow: 2px 2px 2px grey;
+}
+
+.news-logo {
+    width: 40%;
+    height: 100%;
+}
+
+.news-logo img {
+    width: 100%;
+    height: 100%;
+}
+
+.news-text {
+    width: 60%;
+    height: 100%;
+    padding: 1vh 2vw;
+}
+
+.news-text-one {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    font-family: montserrat;
+    align-items: center;
+
+}
+
+.news-text-one h5 {
+    color: rgb(34, 189, 171);
+}
+
+.news-text-one h6 {
+    font-size: 2vh;
+    letter-spacing: 0.2vh;
+    font-weight: 400;
+}
+
+.news-text h3 {
+    margin-top: 2vh;
+    color: white;
+    font-family: montserrat;
+}
+
+.news-text button {
+    padding: 0.5vw 1vw;
+    margin-top: 2vw;
+    background-color: rgb(26, 30, 37);
+    border: 1px solid white;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.page5button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.coverage {
+    padding: 2vh 8vw;
+    font-size: 2.3vh;
+    font-weight: 600;
+    letter-spacing: 0.3vh;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    position: relative;
+    z-index: 20;
+}
+
+.coverage::after {
+    content: "";
+    background-color: white;
+    transition: 0.3s all linear;
+    width: 100%;
+    height: 0%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.coverage:hover {
+    color: rgb(32, 162, 147);
+    cursor: pointer;
+}
+
+.coverage:hover::after {
+    height: 100%;
+}
+#media{
+    display: none;
+}
+.footer {
+    width: 100vw;
+    height: 30vh;
+    background-color: black;
+    display: flex;
+}
+
+.left-footer {
+    width: 50vw;
+    height: 100%;
+    background-color: rgb(21, 25, 33);
+    color: white;
+    font-family: Gilroy;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 5vw;
+
+}
+
+.left-footer img {
+    width: 15%;
+}
+
+.left-footer h5 {
+    font-weight: 300;
+    margin-top: 0.5vh;
+}
+
+.right-footer {
+    width: 50vw;
+    height: 100%;
+    color: white;
+    font-family: montserrat;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.right-footer-one h4,
+.right-footer-two h4 {
+    font-size: 2vh;
+    margin-bottom: 1vh;
+
+}
+
+.right-footer h4:hover {
+    color: rgb(32, 162, 147);
+    cursor: pointer;
+}
+
+.copyright {
+    width: 100vw;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: montserrat;
+}
+
+.copyright p {
+    color: grey;
+}

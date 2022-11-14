@@ -1,0 +1,376 @@
+@media (max-width:600px) {
+    .loader {
+        display: none;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    .mouse-circle {
+        display: none;
+    }
+
+    nav img {
+        width: 20%;
+    }
+
+    .ri-menu-line {
+        color: white;
+        display: initial;
+        font-size: 5vw;
+    }
+
+    .page1-textdiv,
+    .page1-textdiv2,
+    .page1-textdiv3 {
+        width: 80%;
+    }
+
+    .page1-textdiv h1,
+    .page1-textdiv2 h1,
+    .page1-textdiv3 h1 {
+        font-size: 5vh;
+        width: 100%;
+
+    }
+
+    .page1-textdiv p,
+    .page1-textdiv2 p,
+    .page1-textdiv3 p {
+        font-size: 2vh;
+        margin-bottom: 5vh;
+        width: 100%;
+
+    }
+
+    .arrow {
+        display: none;
+    }
+
+    .fade {
+        font-size: 10vh;
+    }
+
+    .page2 {
+        width: 100vw;
+        min-height: 130vh;
+        background-color: black;
+        position: relative;
+
+    }
+
+    .text h1 {
+        top: 60%;
+        left: 50%;
+        font-size: 4vh;
+        transform: translate(-50%, -50%);
+    }
+
+    .text h3 {
+        top: 25%;
+        left: 30%;
+        font-size: 5vh;
+    }
+
+    .page2-center {
+        width: 100vw;
+        height: 90vh;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        z-index: 99;
+    }
+
+    .box {
+        width: 90.4vw;
+        height: 100%;
+    }
+
+    .box1-text h1 {
+        color: white;
+        font-family: montserrat;
+        font-size: 3vh;
+    }
+
+    .box1-text button {
+        padding: 0.5vh 3.5vw;
+        font-size: 2vh;
+        font-weight: 600;
+        letter-spacing: 0.3vh;
+        background-color: transparent;
+        color: white;
+        border: 2px solid white;
+        position: relative;
+        z-index: 20;
+    }
+
+    .box2-text i,
+    .box3-text i,
+    .box4-text i {
+        color: rgb(61, 173, 149);
+        font-size: 4vh;
+    }
+
+    .box2-text h2,
+    .box3-text h2,
+    .box4-text h2 {
+        color: white;
+        font-size: 2vh;
+        font-family: montserrat;
+        margin: 1.5vw 0;
+    }
+
+    .box2-text p,
+    .box3-text p,
+    .box4-text p {
+        color: grey;
+        font-size: 1.5vh;
+        font-weight: 800;
+        font-family: montserrat;
+
+    }
+
+    .page3 {
+        width: 100vw;
+        min-height: 100vh;
+        background-color: rgb(12, 15, 22);
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .page3-left {
+        width: 100vw;
+        min-height: 90vh;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        margin-top: 5vh;
+    }
+
+    .page3-left-part1 {
+        width: 40vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .part1-img1,
+    .part1-img2 {
+        width: 100%;
+        height: 50%;
+        border-radius: 1vw;
+        overflow: hidden;
+        margin-top: 2vw;
+    }
+
+    .page3-left-part2 {
+        width: 40vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .part2-img1,
+    .part2-img2 {
+        width: 100%;
+        height: 100%;
+        border-radius: 1vw;
+        overflow: hidden;
+        margin-top: 1.5vw;
+    }
+
+
+    .page3-right {
+        width: 100vw;
+        min-height: 100vh;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+        color: white;
+        padding: 3vw;
+        font-family: montserrat;
+    }
+
+    .page3-right h5 {
+        margin-bottom: 3vw;
+        font-size: 3vh;
+    }
+
+    .page3-right h1 {
+        margin-bottom: 3vw;
+        font-size: 4vh;
+    }
+
+    .page3-right p {
+        word-break: 1vh;
+        margin-bottom: 2vw;
+
+    }
+
+    .page3-right button {
+        padding: 1.5vh 3.5vw;
+        font-size: 2vh;
+        margin-top: 3vh;
+    }
+
+    .bottom-box {
+        width: 30.5vw;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background-color: rgb(17, 20, 27);
+        border-radius: 15px;
+    }
+
+    .page4-top {
+        display: none;
+
+    }
+
+    .page4-center-img {
+        width: 100vw;
+        height: 60vh;
+        background-image: url(Images/our-people\ img.jpg);
+        background-position: top;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .overlay-4 {
+        width: 100%;
+        height: 100%;
+        background-color: rgba(32, 32, 32, 0.784);
+        display: flex;
+        align-items: center;
+    }
+
+    .overlay-4 h1 {
+        color: white;
+        padding-left: 2vw;
+        font-size: 3vh;
+        font-family: gilroy;
+        width: 50%;
+
+    }
+    .permanant-text {
+        width: 100%;
+        font-family: montserrat;
+    }
+
+    .permanant-text h6 {
+        letter-spacing: 0.6vh;
+        font-weight: 400;
+        margin-bottom: 1vh;
+
+    }
+
+
+    .permanant-text h4 {
+        font-size: 3vh;
+
+    }
+
+    .info h3 {
+        font-weight: 300;
+        font-family: montserrat;
+        font-size: 2vh;
+        letter-spacing: 0.2vh;
+        padding: 0.5vh;
+    }
+
+    .profile-img {
+        width: 50px;
+        height: 50px;
+        overflow: hidden;
+        margin-right: 2vw;
+        border-radius: 90%;
+
+    }
+
+    .page4-bottom-one,
+    .page4-bottom-two {
+        width: 47vw;
+        height: 25vh;
+        margin-left: 2vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 1vw;
+    }
+
+    .counting {
+        border: 2px solid aqua;
+        width: 15vw;
+        height: 15vw;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .counting-text {
+        padding: 1vw;
+        font-family: montserrat;
+    }
+
+    .counting-text h6 {
+        color: grey;
+        margin-bottom: 0.5vh;
+    }
+
+    .counting-text h5 {
+        color: white;
+    }
+
+    .page5-top .fade {
+        font-size: 25vw;
+    }
+
+    .page5-top .text h1 {
+        font-size: 5vw;
+    }
+
+    .page5-top .text h3 {
+        font-size: 5vw;
+    }
+    #media{
+        width: 90vw;
+        display:flex ;
+        align-items: center;
+        justify-content: center;
+        height: 60vh;
+        margin: auto;
+        
+    }
+    .news-div {
+        width: 90vw;
+        height: 40vh;
+        display: flex;
+        box-shadow: 2px 2px 2px grey;
+    }
+    .mySwiperlast{
+        display: none;
+    }
+    .left-footer {
+        width: 100vw;
+    padding: 0 3vw;
+    }
+    
+    .right-footer{
+        display: none;
+    }
+    
+    
+    
+
+}
