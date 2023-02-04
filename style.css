@@ -78,10 +78,41 @@ body {
     width: 100vw;
     height: 100vh;
 }
+.media-nav{
+        min-height: 100vh;
+        width: 40vw;
+        padding: 2vw;
+        position: fixed;
+        background-color: black;
+        z-index: 111;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        right: 0;
+        transform-origin: right;
+        transform: translateX(100%);
+        transition: 1s all linear;
+}
 
-.swiper {
-    width: 100vw;
-    height: 100vh;
+.media-nav ul{
+    list-style:circle;
+}
+
+.media-nav ul li{
+    font: 400 4vmax "Montserrat";
+    color: white;
+    padding: 1.5vmax 0;
+}
+.media-nav ul li:hover{
+    transform: translateX(10%);
+}
+
+.cross{
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    font-size: 2vmax;
 }
 
 .swiper-slide {
@@ -92,6 +123,7 @@ body {
 
 .slide1 {
     width: 100vw;
+    height: 100vh;
     background-image: url(Images/slider-img2.jpg);
     background-position: center;
     background-size: cover;
@@ -100,7 +132,7 @@ body {
 
 .overlay {
     width: 100vw;
-    height: 100vh;
+    height: 100%;
     background-color: rgba(78, 77, 77, 0.726);
     display: flex;
     align-items: center;
@@ -110,6 +142,7 @@ body {
 
 .slide2 {
     width: 100vw;
+    height: 100vh;
     background-image: url(Images/slider\ img3.jpg);
     background-position: center;
     background-size: cover;
@@ -117,6 +150,7 @@ body {
 
 .slide3 {
     width: 100vw;
+    height: 100vh;
     background-image: url(Images/slider\ img\ 4.jpg);
     background-position: center;
     background-size: cover;
@@ -704,7 +738,7 @@ nav img {
     width: 38vw;
     height: 45vh;
     position: absolute;
-    right: 5%;
+    right: 3%;
     top: 18%;
     background-color: rgb(117, 218, 180);
     border-radius: 5%;

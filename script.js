@@ -22,7 +22,7 @@ window.addEventListener("mousemove",function(dets){
 setTimeout(function(){
  loader.style.transform="translateY(-110%)"
 
-},3000)
+},2800)
 
 
 
@@ -186,7 +186,7 @@ gsap.from(".page3-right p", {
   onStart: function () {
     $('.page3-right p').textillate({
       in: {
-        effect: 'fadeInRight', delay: 10
+        effect: 'fadeInRight', delay: 3
       }
 
     })
@@ -261,21 +261,18 @@ tl5.from(".page5button", {
   y: 100
 })
 
+let cross = document.querySelector('.cross')
+let mediaNav = document.querySelector('.media-nav')
+let hamberger = document.querySelector('.ri-menu-line')
 
-let listnav = document.querySelector(".list-nav")
-let rimenuline = document.querySelector(".ri-menu-line")
-let close = document.querySelector(".close")
 
-rimenuline.addEventListener("click",function(){
-  listnav.style.transform= "translateX(0%)";
-
-})
-close.addEventListener("click",function(){
-  listnav.style.transform= "translateX(100%)";
-
+hamberger.addEventListener('click',function(){
+  mediaNav.style.transform = 'translateX(0%)';
 })
 
-
+cross.addEventListener('click',function(){
+  mediaNav.style.transform = "translateX(100%)"
+})
 
 
 

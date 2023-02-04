@@ -3,6 +3,18 @@
         display: none;
     }
 
+    .media-nav{
+        width: 100vw;
+    }
+    .swiper {
+        width: 100vw;
+        height: 100vh;
+    }
+    
+
+
+
+
     nav ul {
         display: none;
     }
@@ -256,28 +268,16 @@
     .overlay-4 h1 {
         color: white;
         padding-left: 2vw;
-        font-size: 3vh;
+        font-size: 6vh;
         font-family: gilroy;
-        width: 50%;
-
-    }
-    .permanant-text {
         width: 100%;
-        font-family: montserrat;
-    }
-
-    .permanant-text h6 {
-        letter-spacing: 0.6vh;
-        font-weight: 400;
-        margin-bottom: 1vh;
 
     }
 
-
-    .permanant-text h4 {
-        font-size: 3vh;
-
+    .small-slider {
+       display: none;
     }
+    
 
     .info h3 {
         font-weight: 300;
